@@ -111,8 +111,7 @@
     scene.add(line6);
 
     renderer = new THREE.WebGLRenderer({
-      alpha: true,
-      antialias: true
+      alpha: true
     });
 
     renderer.setClearColor('#fff', 0);
