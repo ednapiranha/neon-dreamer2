@@ -37,7 +37,7 @@
 
     var geometry2 = new THREE.Geometry();
 
-    for (var i =- size; i <= size; i += step) {
+    for (var i =- size; i <= size; i += step + 15) {
       geometry2.vertices.push( new THREE.Vector3(i, 260, - size));
       geometry2.vertices.push( new THREE.Vector3(i, 260,   size));
     }
@@ -52,7 +52,7 @@
 
     var geometry3 = new THREE.Geometry();
 
-    for (var i =- size; i <= size; i += step) {
+    for (var i =- size; i <= size; i += step + 15) {
       geometry3.vertices.push( new THREE.Vector3(i, 1260, - size));
       geometry3.vertices.push( new THREE.Vector3(i, 1260,   size));
     }
@@ -84,7 +84,7 @@
 
     for (var i =- size; i <= size; i += step) {
       geometry5.vertices.push(new THREE.Vector3(1980, size, i));
-      geometry5.vertices.push(new THREE.Vector3(-2530, -size, i));
+      geometry5.vertices.push(new THREE.Vector3(-2780, -size, i));
     }
 
     var material5 = new THREE.LineBasicMaterial({
@@ -99,7 +99,7 @@
 
     for (var i =- size; i <= size; i += step) {
       geometry6.vertices.push(new THREE.Vector3(-1930, size, i));
-      geometry6.vertices.push(new THREE.Vector3(2530, -size, i));
+      geometry6.vertices.push(new THREE.Vector3(2780, -size, i));
     }
 
     var material6 = new THREE.LineBasicMaterial({
