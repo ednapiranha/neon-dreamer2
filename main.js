@@ -19,7 +19,7 @@
 
     scene.fog = new THREE.FogExp2('#f00', 0.0085);
 
-    var size = 1500, step = 10;
+    var size = 1500, step = 15;
     var geometry = new THREE.Geometry();
 
     for (var i =- size; i <= size; i += step) {
@@ -83,7 +83,7 @@
     var geometry5 = new THREE.Geometry();
 
     for (var i =- size; i <= size; i += step) {
-      geometry5.vertices.push(new THREE.Vector3(1830, size, i));
+      geometry5.vertices.push(new THREE.Vector3(1980, size, i));
       geometry5.vertices.push(new THREE.Vector3(-2530, -size, i));
     }
 
@@ -98,7 +98,7 @@
     var geometry6 = new THREE.Geometry();
 
     for (var i =- size; i <= size; i += step) {
-      geometry6.vertices.push(new THREE.Vector3(-1830, size, i));
+      geometry6.vertices.push(new THREE.Vector3(-1930, size, i));
       geometry6.vertices.push(new THREE.Vector3(2530, -size, i));
     }
 
@@ -111,7 +111,8 @@
     scene.add(line6);
 
     renderer = new THREE.WebGLRenderer({
-      alpha: true
+      alpha: true,
+      antialias: true
     });
 
     renderer.setClearColor('#fff', 0);
